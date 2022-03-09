@@ -33,6 +33,8 @@ jobs:
           #git status
           #git remote -v
           ls -a 
+          cd Transformers-for-Natural-Language-Processing
+          ls -a
           pwd
           #aws s3 cp . s3://${{ env.S3_BUCKET }} --recursive
           #git add -A
