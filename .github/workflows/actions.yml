@@ -1,0 +1,40 @@
+name: Build and Deploy
+
+on: 
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+     - uses: actions/checkout@v1
+     - name: Build & Zip
+       run: |
+         pwd 
+         ls -a 
+
+     - name: Cloning repo 
+       run: |
+          pwd 
+          mkdir copyt
+          cd copyt
+          ls -a
+          git clone git@github.com:PacktPublishing/Transformers-for-Natural-Language-Processing.git
+          #git init 
+          #git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/Isusquiza/terrena.git"
+          #git config --global user.email "my-bot@bot.com"
+          #git config --global user.name "my-bot"
+          #git fetch
+          #git checkout main
+          #git branch --set-upstream-to=origin/main
+          #git pull 
+          #git status
+          #git remote -v
+          ls -a 
+          pwd
+          #aws s3 cp . s3://${{ env.S3_BUCKET }} --recursive
+          #git add -A
+          #git commit -m "Random File"
+          #git push   
