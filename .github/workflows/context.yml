@@ -1,8 +1,8 @@
 name: Context
 
 on: 
-  push:
-    branches: [main]
+  [push, pull_request]
+    
 
 jobs:
   functions:
@@ -18,7 +18,7 @@ jobs:
 
   one: 
     runs-on: ubuntu-latest 
-    if: github.event_name== "push"
+    if: github.event_name == 'push'
     steps: 
       - name: Dump Github Context
         env: 
