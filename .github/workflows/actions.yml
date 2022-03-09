@@ -21,7 +21,7 @@ jobs:
           mkdir copyt
           cd copyt
           ls -a
-          git clone git@github.com:PacktPublishing/Transformers-for-Natural-Language-Processing.git
+          git clone https://github.com/PacktPublishing/Transformers-for-Natural-Language-Processing.git
           #git init 
           #git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/Isusquiza/terrena.git"
           #git config --global user.email "my-bot@bot.com"
