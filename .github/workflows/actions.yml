@@ -13,7 +13,8 @@ jobs:
      - name: Build & Zip
        run: |
          pwd 
-         ls -a 
+         ls -a
+         echo "Pass" 
 
      - name: Cloning repo 
        run: |
